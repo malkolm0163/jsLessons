@@ -1,0 +1,4 @@
+#todoList li.done {
+    text-decoration: line-through;
+    background-color: lightgray;
+}
