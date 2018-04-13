@@ -34,6 +34,15 @@
 
         this.add = function (item) {
             chech(item);
+            if (todos.find(function (value) {
+                console.log(item.title.toLowerCase().trim() === value.title.toLowerCase().trim());
+                if (item.title.toLowerCase().trim() === value.title.toLowerCase().trim()) {
+                    return true;
+                }
+            })) {
+                console.log('rejected');
+                return false;
+            }
             item.id = todos.length;
             todos.push(item);
             this.length = todos.length;
@@ -77,9 +86,14 @@
     }
     function addTodoHandler() {
         if (todoInput.value){
-            todoList.appendChild(getTodoLi(
-                todos.add({title:todoInput.value, isDone: false})
-            ));
+
+            var el = todos.add({title:todoInput.value, isDone: false});
+            if (el) {
+                todoList.appendChild(getTodoLi(el));
+            } else {
+                alert('Такая задача есть в списке');
+            }
+
 
             todoInput.value = '';
         } else {
