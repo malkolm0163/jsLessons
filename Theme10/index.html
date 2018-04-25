@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lesson 10</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <hr>
+        <div class="col-md-6 col-md-offset-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    Some text
+                </div>
+                <div class="panel-body content"></div>
+                </ul>
+                <div class="panel-footer">
+                    <button class="btn btn-primary editBtn">Edit</button>
+                    <button class="btn btn-info editBtn hidden saveBtn">save</button>
+                    <button class="btn btn-danger editBtn hidden cancelBtn">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div id="errModal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Выберете нужный текст</h4>
+            </div>
+            <ul class="list-group htmls-group"></ul>
+        </div><!-- /.модал-контент -->
+    </div><!-- /.модальное окно -->
+</div><!-- /.модальные -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>

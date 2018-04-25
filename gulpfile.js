@@ -3,7 +3,7 @@ var gulp = require('gulp'),
     bs = require('browser-sync').create();
 
 
-var lastLesson = args.lesson || 9;
+var lastLesson = args.lesson || 10;
 lastLesson = './Theme' + lastLesson;
 
 gulp.task('watch', function () {
@@ -24,3 +24,4 @@ gulp.task('js', function () {
     gulp.src(lastLesson + '/*.js')
         .pipe(bs.stream());
 });
+gulp.task('default', ['watch']);
